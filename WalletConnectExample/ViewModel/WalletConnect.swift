@@ -32,7 +32,6 @@ class WalletConnect {
                                         peerMeta: clientMeta,
                                         chainId: 137) // Polygon chain
         client = Client(delegate: self, dAppInfo: dAppInfo)
-
         try! client.connect(to: wcUrl)
         return wcUrl.fullyPercentEncodedStr
     }
@@ -79,7 +78,7 @@ extension WalletConnect: ClientDelegate {
     }
 
     func client(_ client: Client, didConnect url: WCURL) {
-        print("did connect")
+        print("did connect (url)")
     }
     
     func client(_ client: Client, didSubscribe url: WCURL) {
@@ -97,7 +96,9 @@ extension WalletConnect: ClientDelegate {
 
     func client(_ client: Client, didDisconnect session: Session, isReconnecting: Bool) {
         print("did disconnect, reconnecting: \(isReconnecting)")
-        UserDefaults.standard.removeObject(forKey: WalletConnect.sessionKey)
+        if !isReconnecting {
+            UserDefaults.standard.removeObject(forKey: WalletConnect.sessionKey)
+        }
         delegate.didDisconnect(isReconnecting: isReconnecting)
     }
 

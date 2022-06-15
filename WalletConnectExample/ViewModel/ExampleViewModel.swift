@@ -49,8 +49,6 @@ class ExampleViewModel: ObservableObject {
             if let url = URL(string: wallet.formLinkForOpen()),
                UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            } else {
-                //TODO: mb show message for wallet verification only in this case?
             }
         }
     }
@@ -91,7 +89,7 @@ class ExampleViewModel: ObservableObject {
             if let url = URL(string: deepLink), UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             } else {
-                //TODO: deeplink into app in store
+                // Open app in App Store or do something else
             }
         }
     }

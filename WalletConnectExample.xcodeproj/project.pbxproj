@@ -16,7 +16,6 @@
 		11BE8D072855F2C30088F261 /* MainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE8D062855F2C30088F261 /* MainContainer.swift */; };
 		11BE8D092855F2D40088F261 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE8D082855F2D40088F261 /* Wallet.swift */; };
 		11BE8D0D2856025D0088F261 /* WalletConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE8D0C2856025D0088F261 /* WalletConnect.swift */; };
-		11BE8D10285602880088F261 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BE8D0F285602880088F261 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		11BE8D062855F2C30088F261 /* MainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer.swift; sourceTree = "<group>"; };
 		11BE8D082855F2D40088F261 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		11BE8D0C2856025D0088F261 /* WalletConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConnect.swift; sourceTree = "<group>"; };
-		11BE8D0F285602880088F261 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +61,6 @@
 		11BE8CEF2855ED270088F261 /* WalletConnectExample */ = {
 			isa = PBXGroup;
 			children = (
-				11BE8D0E2856027E0088F261 /* Util */,
 				11BE8D052855F2A60088F261 /* View */,
 				11BE8D042855F29B0088F261 /* Model */,
 				11BE8D032855F2940088F261 /* ViewModel */,
@@ -106,14 +103,6 @@
 				11BE8D062855F2C30088F261 /* MainContainer.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		11BE8D0E2856027E0088F261 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				11BE8D0F285602880088F261 /* Constants.swift */,
-			);
-			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,7 +187,6 @@
 				11BE8D0D2856025D0088F261 /* WalletConnect.swift in Sources */,
 				11BE8D072855F2C30088F261 /* MainContainer.swift in Sources */,
 				11BE8CF12855ED270088F261 /* WalletConnectExampleApp.swift in Sources */,
-				11BE8D10285602880088F261 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
