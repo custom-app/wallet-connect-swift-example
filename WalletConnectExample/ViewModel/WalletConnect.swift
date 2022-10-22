@@ -22,7 +22,7 @@ class WalletConnect {
 
     func connect() -> String {
         let wcUrl =  WCURL(topic: UUID().uuidString,
-                           bridgeURL: URL(string: "https://safe-walletconnect.gnosis.io/")!,
+                           bridgeURL: URL(string: "https://safe-walletconnect.safe.global/")!,
                            key: randomKey())
         let clientMeta = Session.ClientMeta(name: "Test app",
                                             description: "Wallet connect test app",
